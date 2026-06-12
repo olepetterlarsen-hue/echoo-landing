@@ -177,7 +177,7 @@ section { position: relative; }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 .nav-links { display: flex; align-items: center; gap: 30px; }
 .nav-links a {
-  font-size: 14.5px; color: var(--ink-2); font-weight: 500;
+  font-size: 14.5px; color: color-mix(in srgb, var(--ink-2) 55%, var(--ink)); font-weight: 500;
   transition: color .15s ease;
 }
 .nav-links a:hover { color: var(--ink); }
