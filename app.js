@@ -57,20 +57,22 @@
 
   // Form validation (client-side only — wire up real submit/CRM at integration)
   const form = document.getElementById('demoForm');
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    let ok = true;
-    ['navn', 'bedrift', 'telefon'].forEach(n => {
-      const inp = form.querySelector('[name="' + n + '"]');
-      const field = inp.closest('.field');
-      if (!inp.value.trim()) { field.classList.add('err'); ok = false; }
-      else field.classList.remove('err');
+  if (form) {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      let ok = true;
+      ['navn', 'bedrift', 'telefon'].forEach(n => {
+        const inp = form.querySelector('[name="' + n + '"]');
+        const field = inp.closest('.field');
+        if (!inp.value.trim()) { field.classList.add('err'); ok = false; }
+        else field.classList.remove('err');
+      });
+      if (!ok) return;
+      form.style.display = 'none';
+      document.getElementById('formSuccess').classList.add('show');
     });
-    if (!ok) return;
-    form.style.display = 'none';
-    document.getElementById('formSuccess').classList.add('show');
-  });
-  form.querySelectorAll('input').forEach(inp => inp.addEventListener('input', () => inp.closest('.field').classList.remove('err')));
+    form.querySelectorAll('input').forEach(inp => inp.addEventListener('input', () => inp.closest('.field').classList.remove('err')));
+  }
 
   // Scroll reveal — fall back to visible if IO unsupported or motion-reduced
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
