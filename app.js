@@ -1,4 +1,18 @@
 (function () {
+  // -----------------------------------------------------------------------
+  // App-konfigurasjon
+  // -----------------------------------------------------------------------
+  // Endre APP_URL her — alle CTA-er som peker inn i Echoo-appen bygges fra
+  // denne konstanten. Elementene i HTML har attributtet [data-app-path] med
+  // path-delen (f.eks. "/signup?plan=base"), og en statisk fallback-href.
+  // JS overskriver href = APP_URL + data-app-path ved sideinnlasting.
+  var APP_URL = "https://app.echoo.no";
+
+  document.querySelectorAll('[data-app-path]').forEach(function (el) {
+    var path = el.getAttribute('data-app-path') || '/';
+    el.setAttribute('href', APP_URL + path);
+  });
+
   // Sticky nav shadow
   const nav = document.getElementById('nav');
   const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);

@@ -181,7 +181,15 @@ section { position: relative; }
   transition: color .15s ease;
 }
 .nav-links a:hover { color: var(--ink); }
-.nav-cta { display: flex; align-items: center; gap: 12px; }
+.nav-cta { display: flex; align-items: center; gap: 14px; }
+.nav-login {
+  font-size: 14.5px; font-weight: 500;
+  color: color-mix(in srgb, var(--ink-2) 55%, var(--ink));
+  padding: 8px 4px;
+  transition: color .15s ease;
+}
+.nav-login:hover { color: var(--ink); }
+@media (max-width: 940px) { .nav-login { display: none; } }
 
 /* Burger button */
 .nav-burger {
@@ -607,6 +615,8 @@ section { position: relative; }
 .price-left .addon-amt { font-family: var(--font-display); font-weight: 800; font-size: 22px; color: var(--orange); letter-spacing: -.02em; }
 .price-left .addon-note { color: var(--ink-2); font-size: 14.5px; line-height: 1.55; margin-top: 8px; max-width: 360px; }
 .price-left .addon-note b { color: var(--ink); font-weight: 700; }
+.price-left .addon-cta { display: inline-block; margin-top: 14px; font-family: var(--font-display); font-weight: 700; font-size: 15px; letter-spacing: -.01em; color: var(--orange); transition: color .15s ease; }
+.price-left .addon-cta:hover { color: var(--orange-2); }
 .price-mid { background: var(--line); }
 .price-right { padding: 40px; }
 .price-right .h { font-family: var(--font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
@@ -714,6 +724,9 @@ section { position: relative; }
 .cta-band h2 { font-size: clamp(26px, 3.4vw, 40px); color: var(--orange-ink); max-width: 640px; }
 .cta-band .btn-dark { background: #16140f; color: #f4f3ee; border-color: #16140f; }
 .cta-band .btn-dark:hover { background: #000; border-color: #000; }
+.cta-band-actions { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+.cta-band-link { color: var(--orange-ink); font-weight: 600; font-size: 15px; opacity: .9; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.cta-band-link:hover { opacity: 1; }
 
 /* ---------- Footer ---------- */
 .footer { background: var(--bg-2); border-top: 1px solid var(--line); }
