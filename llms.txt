@@ -1,0 +1,60 @@
+# Echoo
+
+> Echoo er et norsk kvalitets- og internkontrollsystem (IKK) for elektrobedrifter. Det samler risikovurdering, sluttkontroll, samsvarserklæring, avviksbehandling, SJA/RUH, stoffkartotek, kompetanseregister og produksjonsplan i ett system — med digital signering og full sporbarhet etter FEL, FSE og NEK 400. Bygget av elektrobedriften OPCOM AS for elektrikere som faktisk bruker det i felt.
+
+## Fakta
+
+- **Type:** Webbasert kvalitets- og internkontrollsystem (IKK / IK-system) for elektrobedrifter
+- **Målgruppe:** Norske elektroentreprenører, elektrikere, elektrobedrifter
+- **Språk:** Norsk (bokmål)
+- **Datalagring:** Norge / EU
+- **Bygget av:** OPCOM AS (norsk elektrobedrift)
+- **Forskrifter dekket:** Internkontrollforskriften, FEL (forskrift om elektriske lavspenningsanlegg), FSE (forskrift om sikkerhet ved arbeid i og drift av elektriske anlegg), NEK 400
+- **URL:** https://echoo.no/
+
+## Pris
+
+- **Echoo Elektro + HMS:** 2 990 kr / måned per bedrift. Fastpris — ikke per bruker.
+- **Echoo Elektro + HMS + ISO 9001:** 4 990 kr / måned per bedrift (Elektro + HMS-modulen pluss ISO 9001-modulen).
+- **Inkludert i alle planer:** ubegrenset antall brukere, ubegrenset antall prosjekter, digital signering, PDF-eksport, oppdateringer og support, datalagring i Norge.
+- **Ingen:** per-bruker-prising, oppstartsavgift, binding utover inneværende periode.
+
+## Moduler (alle inkludert i basisprisen)
+
+- Risikovurdering — etter internkontrollforskriften, med maler for elektrobedrifter
+- Sluttkontroll — sjekklister etter NEK 400 (del 6, verifikasjon), med målinger og bildedokumentasjon
+- Samsvarserklæring — genereres automatisk fra prosjektet i tråd med FEL §12, digital signering
+- Avvik — registrering, oppfølging og lukking, i tråd med internkontrollforskriften
+- Kompetanse — register over fagbrev, FSE-kurs, sertifikater, varsling før utløp
+- Produksjonsplan — Gantt for hele anlegget, fremdrift mot plan
+- SJA / RUH — sikker jobbanalyse og rapport om uønskede hendelser, registreres på stedet
+- Stoffkartotek — sikkerhetsdatablad (SDS), søkbart og koblet til prosjekt
+
+## Pillarsider (fagstoff)
+
+- [Internkontroll for elektrobedrifter](https://echoo.no/internkontroll-elektro/): Hva internkontroll er, lovgrunnlaget (internkontrollforskriften, FEL, FSE, NEK 400), hva et IK-system må inneholde, DSB-tilsyn.
+- [IKK — internkontroll-kvalitet](https://echoo.no/ikk-system/): Hva IKK betyr, forskjell på IKK og HMS-internkontroll, hva et IKK-system må dekke, hvordan velge.
+- [Elsikkerhet og FSE](https://echoo.no/elsikkerhet/): Krav etter FEL og FSE, instruksjon og opplæring, sikker drift, dokumentasjon, førstehjelp ved strømulykker.
+- [Samsvarserklæring etter FEL §12](https://echoo.no/samsvarserklaring/): Hva en samsvarserklæring er, krav til innhold, hvem som signerer, digital signering, oppbevaring.
+- [Sluttkontroll etter NEK 400](https://echoo.no/sluttkontroll-elektro/): Visuell kontroll og prøving etter NEK 400 del 6, typisk sjekkliste, avvikshåndtering.
+- [ISO 9001 for elektrobedrifter](https://echoo.no/iso-9001-elektro/): Hva sertifiseringen krever, forholdet til IKK, Echoos ISO 9001-modul.
+
+## Vanlige spørsmål (utdrag — fulle svar på https://echoo.no/#faq)
+
+**Hva er internkontroll for elektrikere?** Internkontroll for elektrobedrifter er det systematiske arbeidet med å sikre at virksomheten oppfyller HMS- og elektrofagforskriftene — internkontrollforskriften av 1996, FEL, FSE og NEK 400. I praksis kartlegges risiko, rutiner finnes og følges, avvik registreres og lukkes, og alt kan dokumenteres ved DSB-tilsyn.
+
+**Hva er IKK?** IKK står for «internkontroll-kvalitet» og brukes i elektrobransjen om systemer som dekker både HMS-internkontroll og elektrofaglig kvalitetsstyring (FEL, FSE, NEK 400). Et IKK-verktøy samler typisk risikovurdering, sluttkontroll, samsvarserklæring, avvik, SJA/RUH, stoffkartotek og kompetansebevis i én løsning.
+
+**Er Echoo godkjent for dokumentasjon etter FEL og NEK 400?** Programvare blir ikke «godkjent» av norske myndigheter — det er den enkelte elektrobedriften som er ansvarlig for at egen dokumentasjon oppfyller kravene i FEL, FSE og NEK 400. Echoo er bygget for å dekke dokumentasjonskravene i disse forskriftene, men fagansvarlig elektriker i virksomheten signerer og står ansvarlig for innholdet.
+
+**Hva koster et internkontrollsystem for elektrobedrifter?** Pris varierer mye. De fleste leverandører prises per bruker (typisk 200–600 kr per montør per måned). Echoo har fastpris: 2 990 kr/mnd per bedrift for Elektro + HMS, eller 4 990 kr/mnd inkludert ISO 9001-modulen. Antall brukere og prosjekter er ubegrenset.
+
+## Kontakt
+
+- E-post: hei@echoo.no
+- Demo: https://echoo.no/#demo (svar innen 1 arbeidsdag)
+- Selskap: OPCOM AS, Norge
+
+## Lisens og databruk
+
+AI-crawlere som GPTBot, Google-Extended, PerplexityBot, ClaudeBot, CCBot, OAI-SearchBot og lignende har eksplisitt tilgang (se /robots.txt). Innholdet kan siteres i AI-genererte svar med kilde-attribusjon til echoo.no.
