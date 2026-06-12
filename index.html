@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Echoo — Kvalitetssystem for elektrohåndverk</title>
+<meta name="description" content="Echoo er et kvalitetssystem bygget av håndverkere for håndverkere. Risikovurdering, sluttkontroll, samsvarserklæring og produksjonsplan — samlet på prosjektkort med digital signering. Fastpris per bedrift." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top" aria-label="Echoo">
+      <svg class="rings" width="46" height="22" viewBox="0 0 46 22" aria-hidden="true">
+        <circle class="solid" cx="11" cy="11" r="9.2"/>
+        <circle cx="23" cy="11" r="9.2"/>
+        <circle cx="35" cy="11" r="9.2"/>
+      </svg>
+      <span class="word">ECHOO</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#problem">Problem</a>
+      <a href="#hvordan">Slik fungerer det</a>
+      <a href="#funksjoner">Funksjoner</a>
+      <a href="#priser">Priser</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#priser" class="btn btn-ghost btn-sm">Se priser</a>
+      <a href="#demo" class="btn btn-primary btn-sm">Book demo</a>
+      <button class="nav-burger" id="navBurger" aria-label="Meny" aria-expanded="false" aria-controls="navMobile"><span></span></button>
+    </div>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a class="m-link" href="#problem">Problem</a>
+    <a class="m-link" href="#hvordan">Slik fungerer det</a>
+    <a class="m-link" href="#funksjoner">Funksjoner</a>
+    <a class="m-link" href="#priser">Priser</a>
+    <a class="m-link" href="#faq">FAQ</a>
+    <div class="m-cta">
+      <a href="#priser" class="btn btn-ghost">Se priser</a>
+      <a href="#demo" class="btn btn-primary">Book demo</a>
+    </div>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">Kvalitetssystem for elektrohåndverk</span>
+      <h1>De fleste systemer er overpriset og hjelper ikke produksjonen.<br><span class="hl">Echoo er bygget av håndverkere — for håndverkere.</span></h1>
+      <p class="sub">Risikovurdering, sluttkontroll, samsvarserklæring og produksjonsplan — samlet på prosjektkort med digital signering, PDF-eksport og full sporbarhet etter FEL og NEK 400.</p>
+      <div class="hero-cta">
+        <a href="#demo" class="btn btn-primary">Book demo<span class="btn-arrow"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a href="#priser" class="btn btn-ghost">Se priser</a>
+      </div>
+      <div class="hero-chips">
+        <span class="chip"><span class="dot"></span>Fastpris per bedrift</span>
+        <span class="chip"><span class="dot"></span>Bygget i felt</span>
+        <span class="chip"><span class="dot"></span>Mobilvennlig</span>
+        <span class="chip"><span class="dot"></span>Dokumentasjon som følger jobben</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <!-- Prosjektkort mockup -->
+      <div class="frame">
+        <div class="frame-bar">
+          <div class="dots"><i></i><i></i><i></i></div>
+          <div class="addr">echoo.no/prosjekt/2026-118</div>
+        </div>
+        <div class="frame-body app">
+          <div class="app-topbar">
+            <div class="left">
+              <svg width="38" height="18" viewBox="0 0 46 22" aria-hidden="true"><circle cx="11" cy="11" r="9.2" fill="var(--orange)"/><circle cx="23" cy="11" r="9.2" fill="none" stroke="#f4f3ee" stroke-width="2.4"/><circle cx="35" cy="11" r="9.2" fill="none" stroke="#f4f3ee" stroke-width="2.4"/></svg>
+              <span style="font-weight:600;font-size:12.5px;color:var(--ink-2)">Prosjektkort</span>
+            </div>
+            <span class="app-status"><span class="dot" style="background:var(--orange)"></span>Pågår</span>
+          </div>
+          <div class="pk">
+            <div class="pk-head">
+              <h4>Næringsbygg Lade — Tavlerom &amp; kursopplegg</h4>
+              <div class="pk-meta">
+                <div><div class="k">Kunde</div><div class="v">Lade Eiendom AS</div></div>
+                <div><div class="k">Ansvarlig</div><div class="v">T. Pedersen</div></div>
+                <div><div class="k">Anlegg nr</div><div class="v">118-2026</div></div>
+              </div>
+            </div>
+            <div class="pk-prog">
+              <div class="lbl"><span>Fremdrift</span><b>68 %</b></div>
+              <div class="bar"><i style="width:68%"></i></div>
+            </div>
+            <div class="pk-mods">
+              <div class="pk-mod"><span class="ic done">✓</span><div><div class="nm">Risikovurdering</div><div class="st">Signert · 12.05</div></div></div>
+              <div class="pk-mod"><span class="ic done">✓</span><div><div class="nm">SJA</div><div class="st">Signert · 14.05</div></div></div>
+              <div class="pk-mod"><span class="ic prog">●</span><div><div class="nm">Sluttkontroll</div><div class="st">3 av 5 punkter</div></div></div>
+              <div class="pk-mod"><span class="ic todo">○</span><div><div class="nm">Samsvarserklæring</div><div class="st">Venter</div></div></div>
+            </div>
+            <div class="pk-sign">
+              <div><div class="t">Klar for digital signering</div><div class="d">Sluttkontroll fullført → generer samsvarserklæring</div></div>
+              <div class="go">Signer →</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+<div class="trust">
+  <div class="wrap trust-inner">
+    <div class="made">Bygget av <b>OPCOM AS</b> — en elektrobedrift som faktisk bruker det hver dag.</div>
+    <div class="std">
+      <span>FEL</span>
+      <span>NEK 400</span>
+      <span>DSB-klar dokumentasjon</span>
+      <span>Data lagret i Norge</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PROBLEM ================= -->
+<section class="pad-y" id="problem">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Problemet</span>
+      <h2>Hvorfor de fleste systemene feiler i felt</h2>
+      <p class="lede">De er laget for å se bra ut i en salgsdemo — ikke for å overleve en regnvåt dag i en grøft. Tre ting går igjen:</p>
+    </div>
+    <div class="cards-3">
+      <div class="pcard tint tint-rust reveal">
+        <div class="num">01</div>
+        <h3>For dyrt</h3>
+        <p><span class="strike">Per-bruker-prising</span> straffer deg for å vokse. Du betaler mest akkurat når du har mest å gjøre og flest folk i sving.</p>
+      </div>
+      <div class="pcard tint tint-olive reveal">
+        <div class="num">02</div>
+        <h3>For komplisert</h3>
+        <p>Bygget av konsulenter som aldri har stått i en koblingsboks. Du må oppdatere systemet bare for at det skal speile virkeligheten.</p>
+      </div>
+      <div class="pcard tint tint-slate reveal">
+        <div class="num">03</div>
+        <h3>Kontorvinklet</h3>
+        <p>Laget for skrivebordet, ikke for anlegget. Fungerer dårlig på telefonen — der jobben faktisk skjer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HVORDAN ================= -->
+<section class="pad-y divider" id="hvordan">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Slik fungerer det</span>
+      <h2>Fra prosjekt til signert arkiv — uten ekstra papirarbeid</h2>
+      <p class="lede">Dokumentasjonen følger jobben. Du registrerer der du står, signerer på stedet, og arkivet bygger seg selv.</p>
+    </div>
+    <div class="steps">
+      <div class="step s-1 reveal">
+        <div class="n">1</div>
+        <h3>Opprett prosjekt</h3>
+        <p>Legg inn anlegget. Risikovurdering og SJA på plass før første kabel er trukket.</p>
+        <div class="arr"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h11M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </div>
+      <div class="step s-2 reveal">
+        <div class="n">2</div>
+        <h3>Jobb som vanlig</h3>
+        <p>Avvik, sluttkontroll og kompetanse registreres fra telefonen mens du står i anlegget.</p>
+        <div class="arr"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h11M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </div>
+      <div class="step s-3 reveal">
+        <div class="n">3</div>
+        <h3>Signer digitalt</h3>
+        <p>Samsvarserklæring og sluttkontroll signeres digitalt. PDF genereres automatisk.</p>
+        <div class="arr"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h11M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </div>
+      <div class="step s-4 reveal">
+        <div class="n">4</div>
+        <h3>Arkiv &amp; sporbarhet</h3>
+        <p>Alt arkivert og søkbart. Full sporbarhet etter FEL og NEK 400 — klart for tilsyn.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FUNKSJONER ================= -->
+<section class="pad-y divider" id="funksjoner">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Funksjoner</span>
+      <h2>Alt du trenger for kvalitet og dokumentasjon — i ett system</h2>
+      <p class="lede">Åtte moduler som henger sammen på prosjektkortet. Ingen løse tråder, ingen dobbeltføring.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal">
+        <div class="ic tinted ic-yellow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l9 16H3L12 3z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 10v4M12 16.5v.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Risikovurdering</h3>
+        <p>Kartlegg farer før jobben starter. Maler tilpasset elektroarbeid.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic tinted ic-green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12.5l5 5L20 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Sluttkontroll</h3>
+        <p>Sjekklister punkt for punkt, med bildedokumentasjon og målinger.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic neutral"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="5" y="3" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M9 8h6M9 12h6M9 16h3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Samsvarserklæring</h3>
+        <p>Genereres automatisk fra prosjektet. Digital signering og PDF.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic tinted ic-red"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v6M12 16v.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Avvik</h3>
+        <p>Meld, følg opp og lukk avvik. Bilde og kommentar fra mobilen.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic tinted ic-blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.7"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Kompetanse</h3>
+        <p>Hold oversikt over sertifikater og kurs. Varsel før noe går ut.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic tinted ic-amber"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h9M4 12h14M4 18h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        <h3>Produksjonsplan</h3>
+        <p>Gantt for hele prosjektet. Se fremdrift mot plan, dag for dag.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic tinted ic-yellow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v6c0 4-3.5 7-8 8-4.5-1-8-4-8-8V7l8-4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></div>
+        <h3>SJA / RUH</h3>
+        <p>Sikker jobbanalyse og uønskede hendelser, registrert på stedet.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic tinted ic-teal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 3h6l1 4-2 2v9a2 2 0 01-4 0V9L8 7l1-4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></div>
+        <h3>Stoffkartotek</h3>
+        <p>Sikkerhetsdatablad samlet og søkbart, koblet til prosjektet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SHOWCASE (tabs) ================= -->
+<section class="pad-y showcase" id="showcase">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Se det i praksis</span>
+      <h2>Slik ser jobben ut i Echoo</h2>
+      <p class="lede">Samme prosjekt, tre vinkler: planlegging, oppfølging og ferdig dokumentasjon.</p>
+    </div>
+
+    <div class="sc-tabs reveal" role="tablist">
+      <button class="sc-tab active" data-tab="gantt">Produksjonsplan</button>
+      <button class="sc-tab" data-tab="kort">Prosjektkort</button>
+      <button class="sc-tab" data-tab="pdf">Samsvarserklæring (PDF)</button>
+    </div>
+
+    <div class="sc-stage reveal">
+      <!-- GANTT -->
+      <div class="sc-panel active" data-panel="gantt">
+        <div class="frame">
+          <div class="frame-bar"><div class="dots"><i></i><i></i><i></i></div><div class="addr">echoo.no/prosjekt/2026-118/plan</div></div>
+          <div class="frame-body app">
+            <div class="app-topbar"><div class="left"><span style="font-weight:700;font-size:14px;font-family:var(--font-display)">Produksjonsplan</span><span style="font-size:11.5px;color:var(--ink-3)">Næringsbygg Lade</span></div><span class="app-status"><span class="dot" style="background:var(--warn)"></span>Uke 24</span></div>
+            <div class="gantt">
+              <div class="gantt-head">
+                <div></div>
+                <div class="gantt-weeks"><span>Uke 22</span><span>Uke 23</span><span>Uke 24</span><span>Uke 25</span><span>Uke 26</span><span>Uke 27</span></div>
+              </div>
+              <div style="position:relative">
+                <div class="gantt-row"><div class="task"><span class="sq" style="background:#57c98a"></span>Grovmontasje</div><div class="gantt-track"><div class="gantt-bar" style="left:0%;width:33%;background:color-mix(in srgb, var(--orange) 55%, #15140f)">Ferdig</div></div></div>
+                <div class="gantt-row"><div class="task"><span class="sq" style="background:#57c98a"></span>Trekking kabel</div><div class="gantt-track"><div class="gantt-bar" style="left:16%;width:33%;background:color-mix(in srgb, var(--orange) 55%, #15140f)">Ferdig</div></div></div>
+                <div class="gantt-row"><div class="task"><span class="sq" style="background:var(--orange)"></span>Tavlemontasje</div><div class="gantt-track"><div class="gantt-bar" style="left:33%;width:25%;background:var(--orange)">Pågår</div></div></div>
+                <div class="gantt-row"><div class="task"><span class="sq" style="background:var(--orange)"></span>Punktdun &amp; uttak</div><div class="gantt-track"><div class="gantt-bar" style="left:42%;width:33%;background:var(--orange)">Pågår</div></div></div>
+                <div class="gantt-row"><div class="task"><span class="sq" style="background:#38382f"></span>Sluttkontroll</div><div class="gantt-track"><div class="gantt-bar" style="left:67%;width:16%;background:#38382f;color:#b6b3a9">Planlagt</div></div></div>
+                <div class="gantt-row"><div class="task"><span class="sq" style="background:#38382f"></span>Overlevering</div><div class="gantt-track"><div class="gantt-bar" style="left:83%;width:14%;background:#38382f;color:#b6b3a9">Planlagt</div></div></div>
+                <div class="gantt-today" style="left:calc(132px + (100% - 132px) * 0.42)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cap"><span class="t">Produksjonsplan</span><span class="d">Gantt for hele anlegget. Dra og slipp, se fremdrift mot plan og hvor «i dag» ligger.</span></div>
+      </div>
+
+      <!-- PROSJEKTKORT -->
+      <div class="sc-panel" data-panel="kort">
+        <div class="frame">
+          <div class="frame-bar"><div class="dots"><i></i><i></i><i></i></div><div class="addr">echoo.no/prosjekt/2026-118</div></div>
+          <div class="frame-body app">
+            <div class="app-topbar"><div class="left"><span style="font-weight:700;font-size:14px;font-family:var(--font-display)">Prosjektkort</span><span style="font-size:11.5px;color:var(--ink-3)">118-2026</span></div><span class="app-status"><span class="dot" style="background:var(--orange)"></span>Pågår</span></div>
+            <div class="pk" style="grid-template-columns:1fr;">
+              <div class="pk-head">
+                <h4>Næringsbygg Lade — Tavlerom &amp; kursopplegg</h4>
+                <div class="pk-meta">
+                  <div><div class="k">Kunde</div><div class="v">Lade Eiendom AS</div></div>
+                  <div><div class="k">Ansvarlig</div><div class="v">T. Pedersen</div></div>
+                  <div><div class="k">Montører</div><div class="v">4 stk</div></div>
+                  <div><div class="k">Frist</div><div class="v">04.07.2026</div></div>
+                </div>
+              </div>
+              <div class="pk-prog"><div class="lbl"><span>Fremdrift</span><b>68 %</b></div><div class="bar"><i style="width:68%"></i></div></div>
+              <div class="pk-mods" style="grid-template-columns:repeat(4,1fr)">
+                <div class="pk-mod"><span class="ic done">✓</span><div><div class="nm">Risikovurdering</div><div class="st">Signert</div></div></div>
+                <div class="pk-mod"><span class="ic done">✓</span><div><div class="nm">SJA</div><div class="st">Signert</div></div></div>
+                <div class="pk-mod"><span class="ic prog">●</span><div><div class="nm">Sluttkontroll</div><div class="st">3/5</div></div></div>
+                <div class="pk-mod"><span class="ic todo">○</span><div><div class="nm">Samsvar</div><div class="st">Venter</div></div></div>
+                <div class="pk-mod"><span class="ic done">✓</span><div><div class="nm">Kompetanse</div><div class="st">OK</div></div></div>
+                <div class="pk-mod"><span class="ic prog">●</span><div><div class="nm">Avvik</div><div class="st">1 åpent</div></div></div>
+                <div class="pk-mod"><span class="ic done">✓</span><div><div class="nm">Stoffkartotek</div><div class="st">12 SDS</div></div></div>
+                <div class="pk-mod"><span class="ic done">✓</span><div><div class="nm">RUH</div><div class="st">0 hendelser</div></div></div>
+              </div>
+              <div class="pk-sign"><div><div class="t">Klar for digital signering</div><div class="d">Fullfør sluttkontroll → generer samsvarserklæring automatisk</div></div><div class="go">Signer →</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="cap"><span class="t">Prosjektkort</span><span class="d">Alt om anlegget på ett sted. Hver modul, status og signatur knyttet til samme kort.</span></div>
+      </div>
+
+      <!-- PDF -->
+      <div class="sc-panel" data-panel="pdf">
+        <div class="frame">
+          <div class="frame-bar"><div class="dots"><i></i><i></i><i></i></div><div class="addr">echoo.no/prosjekt/2026-118/samsvar.pdf</div></div>
+          <div class="frame-body pdf-wrap">
+            <div class="pdf">
+              <div class="ph">
+                <div>
+                  <div class="t">Samsvarserklæring</div>
+                  <div style="font-size:8.5px;color:#6a6a64;margin-top:3px;font-family:var(--font-mono)">OPCOM AS · org. 912 345 678</div>
+                </div>
+                <div class="n">Iht. FEL §12<br>NEK 400:2022<br>Nr. 118-2026</div>
+              </div>
+              <div style="margin-top:12px">
+                <div class="row"><span class="k">Anlegg</span><span class="v">Næringsbygg Lade</span></div>
+                <div class="row"><span class="k">Adresse</span><span class="v">Haakon VIIs gate 9</span></div>
+                <div class="row"><span class="k">Ansvarlig</span><span class="v">T. Pedersen</span></div>
+                <div class="row"><span class="k">Sluttkontroll</span><span class="v">Gjennomført 03.07.2026</span></div>
+              </div>
+              <p class="body-txt">Det erklæres herved at det elektriske anlegget er utført, kontrollert og funnet i samsvar med gjeldende forskrifter (FEL) og NEK 400. Dokumentasjon, sluttkontroll og målinger er vedlagt i prosjektet.</p>
+              <div class="sign-row">
+                <div>
+                  <div class="sig">T. Pedersen</div>
+                  <div class="sig-line">Faglig ansvarlig · 03.07.2026</div>
+                </div>
+                <div class="stamp">SIGNERT<br>DIGITALT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cap"><span class="t">Samsvarserklæring</span><span class="d">Genereres fra prosjektet, signeres digitalt og arkiveres som PDF — klar for kunde og tilsyn.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MOBILE ================= -->
+<section class="pad-y divider">
+  <div class="wrap mobile-section">
+    <div class="phone reveal">
+      <div class="notch"></div>
+      <div class="scr">
+        <div class="mob-top"><span class="t">Nytt avvik</span><span class="app-status"><span class="dot" style="background:var(--orange)"></span>Lade</span></div>
+        <div class="mob-card"><div class="lab">Hvor</div><div class="val">Tavlerom — kurs 14</div></div>
+        <div class="mob-card"><div class="lab">Beskrivelse</div><div class="val" style="font-weight:500;font-size:12px;color:var(--ink-2)">Mangler merking på kursfortegnelse</div>
+          <div class="mob-photo"><span>＋ legg ved bilde</span></div>
+        </div>
+        <div class="mob-btn">Meld avvik</div>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow">Mobilvennlig</span>
+      <h2 style="font-size:clamp(28px,4vw,46px);margin-top:18px">Fungerer der jobben er — på telefonen ute i anlegget</h2>
+      <p class="lede" style="margin-top:20px">Du skal ikke tilbake til kontoret for å dokumentere. Meld avvik, kryss av sluttkontroll og ta bilde direkte fra mobilen. Dokumentasjonen følger naturlig av jobben — ikke som en ekstra oppgave på slutten av dagen.</p>
+      <div class="hero-chips" style="margin-top:28px">
+        <span class="chip"><span class="dot"></span>Bilde rett fra kamera</span>
+        <span class="chip"><span class="dot"></span>Fungerer offline</span>
+        <span class="chip"><span class="dot"></span>Signering på stedet</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRISER ================= -->
+<section class="pad-y divider pricing" id="priser">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Priser</span>
+      <h2>Én fast pris. For hele bedriften.</h2>
+      <p class="lede">Ingen brukerlisens. Ingen per-bruker-prising. Ingen straff for å vokse. Du betaler det samme med 5 montører som med 50.</p>
+    </div>
+    <div class="price-box reveal">
+      <div class="price-left">
+        <div class="tag">Fastpris / måned</div>
+        <div class="amt"><span class="kr">2 900,–</span><span class="per">/ mnd per bedrift</span></div>
+        <p class="note">Alt inkludert, ubegrenset antall brukere og prosjekter. Faktureres per bedrift — ikke per hode.</p>
+        <div class="nope">
+          <div><span class="x">✕</span> Ingen per-bruker-prising</div>
+          <div><span class="x">✕</span> Ingen oppstartsavgift</div>
+          <div><span class="x">✕</span> Ingen binding utover perioden</div>
+        </div>
+      </div>
+      <div class="price-mid"></div>
+      <div class="price-right">
+        <div class="h">Alt dette er med</div>
+        <div class="incl">
+          <div><span class="ck"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Alle åtte moduler — ingen tillegg</div>
+          <div><span class="ck"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Ubegrenset antall brukere og prosjekter</div>
+          <div><span class="ck"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Digital signering og PDF-eksport</div>
+          <div><span class="ck"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Lagring og backup i Norge</div>
+          <div><span class="ck"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Oppdateringer og support inkludert</div>
+          <div><span class="ck"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Hjelp til oppstart og import</div>
+        </div>
+        <div class="cta">
+          <a href="#demo" class="btn btn-primary">Book demo</a>
+          <a href="#demo" class="btn btn-ghost">Be om tilbud</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOUNDERS ================= -->
+<section class="pad-y divider founders" id="grunnleggere">
+  <div class="wrap">
+    <div class="founders-grid">
+      <div class="reveal">
+        <span class="eyebrow">Bygget av håndverkere</span>
+        <h2>Vi laget det fordi ingenting på markedet fungerte i felt.</h2>
+        <p class="big">Echoo startet som vårt eget verktøy i OPCOM AS — en elektrobedrift. Vi var lei av systemer som var dyre, tunge og laget for kontoret.</p>
+        <p class="sm">Så vi bygget det vi selv trengte: et system som tåler en arbeidsdag, fungerer på telefonen og holder dokumentasjonen i orden uten at noen må sitte og «mate maskinen». Nå deler vi det med andre bedrifter som står i det samme.</p>
+        <div class="sig-name">OPCOM AS</div>
+        <div class="role">Grunnleggere · elektrobedrift &amp; utviklere av Echoo</div>
+      </div>
+      <div class="ph-img reveal">
+        <span class="lbl">[ bilde: grunnleggerne / montører i felt ]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEMO ================= -->
+<section class="pad-y demo" id="demo">
+  <div class="wrap">
+    <div class="demo-grid">
+      <div class="reveal">
+        <span class="eyebrow">Book demo</span>
+        <h2 style="font-size:clamp(28px,4vw,46px);margin-top:18px">Få en gjennomgang — på 30 minutter</h2>
+        <p class="lede" style="margin-top:18px">Ingen salgspresentasjon. En elektriker som kan systemet viser deg hvordan det ser ut for din bedrift.</p>
+        <div class="demo-why">
+          <div><span class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.6"/><path d="M10 6v4l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><div class="tx"><b>30 minutter, rett på sak</b><span>Vi viser ditt arbeid i systemet, ikke generiske skjermbilder.</span></div></div>
+          <div><span class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10l4 4 10-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div class="tx"><b>Konkret pris med en gang</b><span>Fastpris for din bedrift — du vet hva det koster før du går.</span></div></div>
+          <div><span class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l7 3v5c0 4-3 6.5-7 7-4-.5-7-3-7-7V5l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span><div class="tx"><b>Ingen forpliktelse</b><span>Du bestemmer etterpå. Vi maser ikke.</span></div></div>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <div class="fc-head"><span class="t">Book demo</span><span class="eyebrow" style="color:var(--ink-3)">Svar innen 1 dag</span></div>
+        <form id="demoForm" novalidate>
+          <div class="fgrid">
+            <div class="field"><label>Navn <span class="req">*</span></label><input name="navn" type="text" placeholder="Ola Hansen" /><span class="msg">Fyll inn navn</span></div>
+            <div class="field"><label>Bedrift <span class="req">*</span></label><input name="bedrift" type="text" placeholder="Hansen Elektro AS" /><span class="msg">Fyll inn bedrift</span></div>
+            <div class="field"><label>Telefon <span class="req">*</span></label><input name="telefon" type="tel" placeholder="900 00 000" /><span class="msg">Fyll inn telefon</span></div>
+            <div class="field"><label>Antall ansatte</label>
+              <select name="ansatte"><option value="">Velg…</option><option>1–5</option><option>6–15</option><option>16–30</option><option>31–60</option><option>60+</option></select>
+            </div>
+            <div class="field full"><label>Ønsket tidspunkt</label>
+              <div class="slots" id="slots">
+                <span class="slot" data-slot="Man formiddag">Man · fm</span>
+                <span class="slot" data-slot="Man ettermiddag">Man · em</span>
+                <span class="slot" data-slot="Tirs formiddag">Tirs · fm</span>
+                <span class="slot" data-slot="Ons ettermiddag">Ons · em</span>
+                <span class="slot" data-slot="Tors formiddag">Tors · fm</span>
+                <span class="slot" data-slot="Fre formiddag">Fre · fm</span>
+              </div>
+              <input type="hidden" name="tidspunkt" id="tidspunkt" />
+            </div>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Book demo</button>
+          </div>
+          <div class="form-foot">Vi bruker opplysningene kun til å avtale demoen. Ingen nyhetsbrev, ingen spam.</div>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="big-ck"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M7 15l5 5 11-12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Takk — vi tar kontakt!</h3>
+          <p>Vi ringer deg innen én arbeidsdag for å avtale tidspunkt. Du trenger ikke gjøre noe mer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="pad-y divider" id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Spørsmål vi får ofte</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">Hva skjer med dokumentasjonen vi allerede har?<span class="pm"></span></button>
+        <div class="faq-a"><div class="inner">Du kan laste opp og koble eksisterende PDF-er og dokumenter til prosjektkortene. Vi hjelper deg i gang ved oppstart, så du slipper å starte på bar bakke. Gammelt arbeid trenger ikke gjøres på nytt.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Kan Echoo integreres med andre systemer?<span class="pm"></span></button>
+        <div class="faq-a"><div class="inner">Echoo støtter PDF-eksport og er enkelt å dele med kunde, tilsyn og regnskap. Vi jobber løpende med integrasjoner — si fra hva dere bruker i dag, så ser vi på det sammen.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Hvordan er datasikkerheten?<span class="pm"></span></button>
+        <div class="faq-a"><div class="inner">Data lagres kryptert i Norge/EU med jevnlig backup. Dere eier deres egne data, og kan ta dem med dere når som helst. Vi selger ikke data videre — punktum.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Hvordan sier vi opp?<span class="pm"></span></button>
+        <div class="faq-a"><div class="inner">Ingen binding utover inneværende periode. Du sier opp når du vil, og får med deg dataene dine ut. Ingen skjulte gebyrer, ingen oppsigelsestid på tolv måneder.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Fungerer det på telefon ute i anlegget?<span class="pm"></span></button>
+        <div class="faq-a"><div class="inner">Ja. Echoo er bygget mobil-først. Du melder avvik, krysser av sluttkontroll, tar bilder og signerer direkte fra telefonen — også når nettet er dårlig.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Hvor lang tid tar oppstart?<span class="pm"></span></button>
+        <div class="faq-a"><div class="inner">De fleste er i gang på et par dager. Vi setter opp maler tilpasset elektroarbeid og hjelper dere med det første prosjektet, så terskelen for å komme i gang er lav.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<div class="hazard"></div>
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Klar for et system som faktisk hjelper produksjonen?</h2>
+    <a href="#demo" class="btn btn-dark">Book demo<span class="btn-arrow"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="col brandcol">
+        <a class="logo" href="#top"><svg class="rings" width="46" height="22" viewBox="0 0 46 22" aria-hidden="true"><circle class="solid" cx="11" cy="11" r="9.2"/><circle cx="23" cy="11" r="9.2"/><circle cx="35" cy="11" r="9.2"/></svg><span class="word">ECHOO</span></a>
+        <p>Kvalitetssystem for elektrohåndverk. Bygget av håndverkere, for håndverkere — av OPCOM AS.</p>
+      </div>
+      <div class="col">
+        <h5>Produkt</h5>
+        <a href="#funksjoner">Funksjoner</a>
+        <a href="#hvordan">Slik fungerer det</a>
+        <a href="#priser">Priser</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="col">
+        <h5>Kontakt</h5>
+        <a href="mailto:hei@echoo.no">hei@echoo.no</a>
+        <a href="tel:+4790000000">+47 900 00 000</a>
+        <p>OPCOM AS<br>Org.nr. 912 345 678</p>
+      </div>
+      <div class="col">
+        <h5>Selskap</h5>
+        <a href="#grunnleggere">Om oss</a>
+        <a href="#">Personvern</a>
+        <a href="#">Vilkår</a>
+        <a href="#demo">Book demo</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Echoo · OPCOM AS · Org.nr. 912 345 678</span>
+      <span>FEL · NEK 400 · Data lagret i Norge</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
