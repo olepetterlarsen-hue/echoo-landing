@@ -601,6 +601,12 @@ section { position: relative; }
 .price-left .nope { display: flex; flex-direction: column; gap: 8px; margin-top: 26px; }
 .price-left .nope div { font-size: 13.5px; color: var(--ink-2); display: flex; align-items: center; gap: 10px; }
 .price-left .nope .x { color: var(--orange); font-family: var(--font-mono); font-weight: 700; }
+.price-left .addon-tier { margin-top: 26px; padding-top: 22px; border-top: 1px dashed var(--line-2); }
+.price-left .addon-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.price-left .addon-label { font-family: var(--font-display); font-weight: 700; font-size: 18px; color: var(--ink); letter-spacing: -.015em; }
+.price-left .addon-amt { font-family: var(--font-display); font-weight: 800; font-size: 22px; color: var(--orange); letter-spacing: -.02em; }
+.price-left .addon-note { color: var(--ink-2); font-size: 14.5px; line-height: 1.55; margin-top: 8px; max-width: 360px; }
+.price-left .addon-note b { color: var(--ink); font-weight: 700; }
 .price-mid { background: var(--line); }
 .price-right { padding: 40px; }
 .price-right .h { font-family: var(--font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
