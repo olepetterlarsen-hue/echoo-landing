@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Inter:wght@500;600&family=JetBrains+Mono:wght@500;600&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    background:#c8c1b2;
+    font-family:'Inter',system-ui,sans-serif;
+    color:#1a1916;
+    position:relative;
+    padding:64px 80px;
+  }
+  body::before{
+    content:"";position:absolute;inset:0;
+    background-image:linear-gradient(rgba(26,25,22,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(26,25,22,.06) 1px,transparent 1px);
+    background-size:48px 48px;pointer-events:none;
+  }
+  .hazard{
+    position:absolute;left:0;right:0;bottom:0;height:14px;
+    background:repeating-linear-gradient(135deg,#1a1916 0 22px,#a06a30 22px 44px);
+    opacity:.85;
+  }
+  .frame{position:relative;display:flex;flex-direction:column;height:100%}
+  .logo{display:flex;align-items:center;gap:18px}
+  .word{font-family:'Archivo',sans-serif;font-weight:900;font-size:42px;letter-spacing:-.02em}
+  .eyebrow{
+    font-family:'JetBrains Mono',ui-monospace,monospace;
+    font-size:14px;letter-spacing:.18em;text-transform:uppercase;
+    color:#57544b;margin-top:38px;
+  }
+  h1{
+    font-family:'Archivo',sans-serif;font-weight:800;
+    font-size:84px;line-height:1.02;letter-spacing:-.025em;
+    margin-top:18px;max-width:1040px;
+  }
+  .hl{color:#a06a30}
+  .sub{
+    font-size:24px;line-height:1.5;color:#57544b;
+    margin-top:24px;max-width:920px;
+  }
+  .foot{
+    position:absolute;left:0;right:0;bottom:34px;
+    display:flex;justify-content:space-between;align-items:center;
+    font-family:'JetBrains Mono',ui-monospace,monospace;
+    font-size:14px;letter-spacing:.06em;color:#57544b;
+  }
+  .foot b{color:#1a1916;font-weight:600}
+  .badges{display:flex;gap:18px}
+  .badge{padding:6px 12px;border:1px solid #a39b88;border-radius:6px;background:#dcd7cc}
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="logo">
+      <svg width="92" height="44" viewBox="0 0 46 22">
+        <circle cx="11" cy="11" r="9.2" fill="#a06a30"/>
+        <circle cx="23" cy="11" r="9.2" fill="none" stroke="#1a1916" stroke-width="2.2"/>
+        <circle cx="35" cy="11" r="9.2" fill="none" stroke="#1a1916" stroke-width="2.2"/>
+      </svg>
+      <span class="word">ECHOO</span>
+    </div>
+    <div class="eyebrow">Internkontroll · Kvalitetssystem · Elektro</div>
+    <h1>Internkontroll og kvalitetssystem <span class="hl">bygget av elektrikere — for elektrikere</span></h1>
+    <p class="sub">Risikovurdering, sluttkontroll, samsvarserklæring og produksjonsplan — samlet på prosjektkort med digital signering, etter FEL og NEK 400.</p>
+    <div class="foot">
+      <span><b>echoo.no</b> · av OPCOM AS</span>
+      <span class="badges">
+        <span class="badge">FEL</span>
+        <span class="badge">NEK 400</span>
+        <span class="badge">FSE</span>
+        <span class="badge">Internkontroll</span>
+      </span>
+    </div>
+  </div>
+  <div class="hazard"></div>
+</body>
+</html>

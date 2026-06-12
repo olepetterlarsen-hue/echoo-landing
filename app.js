@@ -22,9 +22,10 @@
   const tabs = document.querySelectorAll('.sc-tab');
   const panels = document.querySelectorAll('.sc-panel');
   tabs.forEach(t => t.addEventListener('click', () => {
-    tabs.forEach(x => x.classList.remove('active'));
+    tabs.forEach(x => { x.classList.remove('active'); x.setAttribute('aria-selected', 'false'); });
     panels.forEach(p => p.classList.remove('active'));
     t.classList.add('active');
+    t.setAttribute('aria-selected', 'true');
     document.querySelector('.sc-panel[data-panel="' + t.dataset.tab + '"]').classList.add('active');
   }));
 
