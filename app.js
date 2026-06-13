@@ -69,10 +69,11 @@
     document.getElementById('tidspunkt').value = chosen;
   }));
 
-  // Form validation (client-side only — wire up real submit/CRM at integration)
+  // Demo-form: client-side validering + AJAX-submit til Netlify Forms.
+  // Submissions havner under Site → Forms i Netlify dashboard.
   const form = document.getElementById('demoForm');
   if (form) {
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', async e => {
       e.preventDefault();
       let ok = true;
       ['navn', 'bedrift', 'telefon'].forEach(n => {
@@ -82,8 +83,27 @@
         else field.classList.remove('err');
       });
       if (!ok) return;
-      form.style.display = 'none';
-      document.getElementById('formSuccess').classList.add('show');
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalLabel = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sender…'; }
+
+      try {
+        const body = new URLSearchParams();
+        new FormData(form).forEach((v, k) => body.append(k, v));
+        const res = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: body.toString(),
+        });
+        if (!res.ok) throw new Error('Netlify submit returned ' + res.status);
+        form.style.display = 'none';
+        document.getElementById('formSuccess').classList.add('show');
+      } catch (err) {
+        console.error('Form submission failed:', err);
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalLabel; }
+        alert('Innsending feilet. Prøv igjen, eller send oss en e-post på hei@echoo.no.');
+      }
     });
     form.querySelectorAll('input').forEach(inp => inp.addEventListener('input', () => inp.closest('.field').classList.remove('err')));
   }

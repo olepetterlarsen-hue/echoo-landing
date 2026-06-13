@@ -681,7 +681,9 @@
 
       <div class="form-card reveal">
         <div class="fc-head"><span class="t">Book demo</span><span class="eyebrow" style="color:var(--ink-3)">Svar innen 1 dag</span></div>
-        <form id="demoForm" novalidate>
+        <form id="demoForm" name="demo" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+          <input type="hidden" name="form-name" value="demo" />
+          <p style="display:none" aria-hidden="true"><label>Ikke fyll ut dette feltet: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
           <div class="fgrid">
             <div class="field"><label>Navn <span class="req">*</span></label><input name="navn" type="text" placeholder="Ola Hansen" /><span class="msg">Fyll inn navn</span></div>
             <div class="field"><label>Bedrift <span class="req">*</span></label><input name="bedrift" type="text" placeholder="Hansen Elektro AS" /><span class="msg">Fyll inn bedrift</span></div>
