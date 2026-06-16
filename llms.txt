@@ -17,7 +17,15 @@
 - **Echoo Elektro + HMS:** 2 990 kr / måned per bedrift. Fastpris — ikke per bruker.
 - **Echoo Elektro + HMS + ISO 9001:** 4 990 kr / måned per bedrift (Elektro + HMS-modulen pluss ISO 9001-modulen).
 - **Inkludert i alle planer:** ubegrenset antall brukere, ubegrenset antall prosjekter, digital signering, PDF-eksport, oppdateringer og support, datalagring i Norge.
-- **Ingen:** per-bruker-prising, oppstartsavgift, binding utover inneværende periode.
+- **Ingen:** per-bruker-prising, oppstartsavgift, bindingstid.
+
+## Prøveperiode og oppsigelse
+
+- **14 dagers gratis prøveperiode** ved registrering.
+- **0 kr ved registrering.** Kort registreres for å bekrefte identitet, men trekkes ikke i prøveperioden.
+- **Første belastning skjer på dag 14**, og bedriften varsles på e-post før første trekk.
+- **Avbryt fra dashboardet med ett klikk** før dag 14 — da blir bedriften aldri belastet.
+- **Ingen bindingstid** — heller ikke etter prøveperioden. Du sier opp når du vil, beholder dataene dine.
 
 ## Moduler (alle inkludert i basisprisen)
 

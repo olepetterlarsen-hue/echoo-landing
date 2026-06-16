@@ -801,3 +801,20 @@ section { position: relative; }
 .related .lbl { font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
 .related .ttl { font-family: var(--font-display); font-weight: 700; font-size: 18px; letter-spacing: -.015em; color: var(--ink); margin-top: 8px; }
 .related .desc { font-size: 14px; line-height: 1.5; color: var(--ink-2); margin-top: 6px; }
+
+/* ---------- Trial-info (foer Stripe-checkout) ---------- */
+.trial-info { background: var(--bg-2); border-left: 3px solid var(--ok); border-radius: var(--r); padding: 20px 22px; margin-top: 28px; }
+.trial-info .trial-label { font-family: var(--font-mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--ok); font-weight: 600; display: flex; align-items: center; gap: 10px; }
+.trial-info .trial-label::before { content: ""; width: 22px; height: 1px; background: var(--ok); display: inline-block; }
+.trial-info ul { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-direction: column; gap: 9px; }
+.trial-info li { font-size: 14.5px; line-height: 1.5; color: var(--ink-2); padding-left: 24px; position: relative; }
+.trial-info li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--ok); font-weight: 700; }
+.trial-info li strong { color: var(--ink); font-weight: 600; }
+.trial-info .no-binding { margin-top: 4px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--ok); font-weight: 700; padding-left: 0; }
+.trial-info .no-binding::before { content: none; }
+
+/* Liten reassurance under CTA-knapper, like foer Stripe-redirect */
+.cta-reassure { font-size: 13px; color: var(--ink-2); margin-top: 16px; line-height: 1.5; max-width: 520px; }
+.cta-reassure b { color: var(--ink); font-weight: 600; }
+.cta-band .cta-reassure { color: color-mix(in srgb, var(--orange-ink) 88%, transparent); max-width: 620px; margin-top: 14px; }
+.cta-band .cta-reassure b { color: var(--orange-ink); }
