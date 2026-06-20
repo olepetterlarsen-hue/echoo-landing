@@ -497,8 +497,8 @@ function footerHtml(currentSlug) {
       <div class="col">
         <h5>Kontakt</h5>
         <a href="mailto:hei@echoo.no">hei@echoo.no</a>
-        <a href="tel:+4790000000">+47 900 00 000</a>
-        <p>OPCOM AS<br>Org.nr. 912 345 678</p>
+        <a href="tel:+4790809608">+47 908 09 608</a>
+        <p>Echoo AS<br>Org.nr. 935 228 387</p>
       </div>
       <div class="col">
         <h5>Selskap</h5>
@@ -510,7 +510,7 @@ function footerHtml(currentSlug) {
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Echoo · OPCOM AS · Org.nr. 912 345 678</span>
+      <span>© 2026 Echoo · Echoo AS · Org.nr. 935 228 387</span>
       <span>FEL · FSE · NEK 400 · Data lagret i Norge</span>
     </div>
   </div>
@@ -553,7 +553,7 @@ function jsonLd(slug, page) {
     author: { '@type': 'Organization', name: 'Echoo', url: SITE + '/' },
     publisher: {
       '@type': 'Organization',
-      name: 'OPCOM AS',
+      name: 'Echoo AS',
       logo: { '@type': 'ImageObject', url: SITE + '/og-image.png' },
     },
     image: SITE + '/og-image.png',
